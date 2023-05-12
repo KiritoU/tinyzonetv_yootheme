@@ -194,7 +194,10 @@ class Yootheme:
             0,
             timeupdate,
             timeupdate,
-            self.film.get("description", ""),
+            # self.film.get("description", ""),
+            CONFIG.EPISODE_DEFAULT_DESCRIPTION.format(
+                self.season_episode["title"], self.season_episode["title"]
+            ),
             self.season_episode["title"],
             "",
             "publish",
